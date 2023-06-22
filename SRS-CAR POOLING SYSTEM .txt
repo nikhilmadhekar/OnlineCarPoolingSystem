@@ -1,0 +1,156 @@
+Document:System Requirement Specification Document
+
+Title:System Reqruiement Spefication for Online car pooling system portal
+
+Team:
+	Direct Customer, Indirect Customer,Architect, Business Analyst
+	Quality Assurance Team,
+	System Analyst
+
+Objective (Purpose):
+		The online car pooling system for leverages technology to fill empty seats on the road connecting members looking to carpool or to travel by bus,and making travel more affordable, sociable and convenient.
+		
+		Scope:
+		The Carpool Project is an MVC (Model-View-Controller) web based
+		application which includes user interaction. Our project is going to be a web
+		portal. It is going to provide communication environment for users.
+		The system will bring many advantages. For instance, the drivers and
+		customers spend less money on traffic. Moreover, traffic jam and air pollution
+		will be decreased. And both will get benefits from these advantages.
+
+Definitions:
+	OCPS: Online car pooling system
+	QA:  Quality Assurance
+	Portal: Peronalized Online Web Application
+	MIS: Management Information System
+	CRM: Customer Relation Management
+	BI:  Business Intelligence
+	Dashboard: Personalized information presented using  BI techniques such grid, score card, graph
+
+Requirements:
+
+Functional Requirements:
+	Any annonymous User will be able to view leaving from location and going to particular location. Any User will be able select any intra-city destination.
+	
+Admin: This module has the entire access to all other modules, admin will accept the registration requests of the users, after which only a user can login. Generating reports of all rides and registered users.
+User: The users of the application are travelers and commuters who want to go from one place to another or users that are driving a trip and want to find passengers. Users can act as both passengers and drivers while using an application. Any user of the application can act as:
+Driver: If owns a Car/Bike can register the vehicle details. He can publish his trip on the application in order to find passengers to share the ride with. He can check the points collected for the trip and change the trip status.
+Rider: He can search for rides based on source and destination and join ride of his interest. View the ride details and check the status of the ride joined.
+
+		
+
+Driver will be provided options for payment such as through internet banking  or  UPI  or Online payment option.
+ 	 Driver will asked to submit their payment related information.Driver will be redirected to payment gateway for secure payment
+	 transaction.On successful payment processing using payment gateway system will notify driver about transaction and ride confirmation
+	 status.
+
+         Rider will be able track their current location status till, reached to their destination.
+	 
+	 1. Add Transportation Route: Users may add transportations by
+		specifying a route, time/time period and number of empty seats. The
+		user can select the route by two different way. The first way is entering
+		start and end locations. Thus, the route is drawn on the map. The other
+		way is selecting start and end locations on the map. Also, he/she can
+		select at most 8 waypoints.
+	 2. Delete Transportation Route: A user may delete his/her
+		transportation route. After deleting route, other passengers in that
+		transportation will be informed by the system.
+	 3. Request Transportation Route: A user may use a transportation by
+		sending transportation request to the driver of the transportation.
+	 4. Search Transportation Route: A user can search for transportations
+		that the user can see suitable routes to his/her route by specifying time
+		and route.
+	 5. Send Message: The users can have communicate each other by sending
+		message.
+	 6. Reply To A Message: After receiving a message, the user can read the
+		message.
+	 7. Block User: When a user receive disturbing message, s/he can block
+		the user who send that message.
+	 8. Rate User: After having a transportation, the users in the same
+		transportation can rate each other on the web site. Thus, other users
+		can see the user rates and they can decide which transportation is
+		better
+               
+	
+	
+NonFunctional Requirement:
+
+	Security
+		Only administrator has the access to update anddelete the database.
+		Guest user can only search for carpool to join or delete a car pool he should be registered.
+		The system shouldn’t allow the user to access, until he provides correct username and password.
+		If the user request for a new password the password will be send to his mail id.
+		If female users is there we should require some additional information like one extra relative number and there whole rides information get shared with  that number which she provided. 
+		
+		
+	Reliability
+		The system will backup business data on regular basis and recover in short time duration to keep system operational
+		Continous updates are matained , continous Adminstration is done to keep system operational.
+		During peak hours system will maintain same user experaince by managing load balacning .
+		
+
+	Availability
+		 uptime:   24* 7  available
+		 99.999%
+	
+	Maintainability:
+		A Commercial database software will be used to maintain System data Persistence.
+		A readymade Web Server will be installed to host online car pooling system portal (Web Site) to management server capabilities.
+		IT operations team will easily monitor and configure System using Adminstrative tools provided by Servers.
+		Separate enviornment will be maintained for system for isolation in  production, testing, and development.
+
+
+	Portablility:
+		  PDA: Portable Device Application
+		  System will provide portable User Interface ( HTML, CSS, JS) through  users will be able to access online car pooling system portal.
+		  System can be deployed to single server, multi server, to any OS, Cloud (Azure or AWS or GCP)
+
+	Accessibility:
+		only registered user will be able to place an order after authentication.
+		user reject or request rides, rider requests  based on user provided.
+		users will be able to see how many rides are near by that location.	
+
+
+	Durability:
+		  System will retain rider for 15 minutes  even though rider loose internet connection and join again.
+		  System will implement backup and recovery for retaining stake holders data, bussiness operation data and business data over time.
+
+	Efficiency:
+		on Festival season, holidays maxmimum number of users get booked ride with same response time.
+		System will be able to manage all transactions with isolation.
+
+	Modularity:
+		 System will designed and developed using reusable, independent or dependent business senarios in the form of modules.
+		 These modules will be loosely coupled and highly cohesive.
+		 System will contain CRM , ride confirmation processing, payment processing, ride module, membership and Roles managment 
+		 modules.
+	
+	Scalability:
+		System will be able  to  provide  consistent user exeprience to stake holder as well as vistors irrespective of load.
+
+	Safety:
+		
+		online car pooling system portal will be secure from malicious attack, fishing.
+		online car pooling system portal functionalilites are protected from outside with proper firewall configuration.
+		online car pooling system portal will be always kept updated with latest anit virus software.
+		Bussiness data will be backed up periodically to ensure safty of data using increamental back up strategy.
+		Role based security will be applied for Application data and operations accessibility.
+				
+
+
+	Use Case Diagram:  ( UML)
+		Object Oriented Analyis and Design Notation: UML--------Unified Modeling language
+
+		Design Phase:
+
+			Use case diagram
+			Activity diagram
+			State Transition diagram
+			Class diagram
+			deployment diagram
+			object diagram
+	
+
+
+
+
